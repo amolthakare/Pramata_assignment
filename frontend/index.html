@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chat.css">
+    <title>Chat Server</title>
+</head>
+<body>
+    <div class="join-container">
+        <header class="join-header">
+            <h1><i class="fas fa-smile"></i>ChatRooms</h1>
+        </header>
+        <main class="join-main">
+            <form  action="chat.html">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Enter username..."
+                        required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="room">Room</label>
+                    <select name="room" id="room">
+                        <option value="channel1">channel1</option>
+                        <option value="channel2">channel2</option>
+                        <option value="channel3">channel3</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Join ChatRoom</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
+<script src="./js/main.js"></script>
